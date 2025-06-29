@@ -9,9 +9,89 @@
 
 /* Shared styles */
 
+/* dark-1 */
+.dark-1{
+    color:rgb(19, 19, 19) ;
+}
+/* dark-2 */
+.dark-2{
+    color: rgb(66, 66, 66);
+}
+/* dark-3 */
+.dark-3{
+    color: rgb(114, 114, 114);
+}
+/* bg-color */
+.bg-color{
+   background-color: rgba(255, 144, 14, 0.1); 
+}
+.display-flex{
+    display: flex;
+}
+.btn-primary{
+    font-size: 1.25rem;
+    font-weight: 600;
+    background-color: rgb(255, 144, 14);
+    color: white;
+    border-radius: 8px;
+    border: none;
+    padding: 20px 25px;
+}
+
 
 /* nav related styles */
-
+.navber,.banner{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.navber{
+   justify-content: space-between;
+   align-items: center;
+}
+.item-links{
+    display: flex;
+}
+.item-links .item-link{
+    list-style: none;
+    margin-right: 30px;
+}
+.item-link a {
+    text-decoration: none;
+     color: rgb(66, 66, 66);
+     font-weight: 500;
+   
+}
+.brands{
+   font-size: 2.8rem;
+   font-weight: 700;
+}
 
 
 /* bannaer related styles */
+.banner-content{
+    max-width: 860px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.banner-title{
+   font-size: 4rem;
+   font-weight: 700;
+}
+.banner-description{
+    font-size: 1rem;
+    font-weight:400 ;
+}
+.banner-image{
+    width: 100%;
+}
+
+
+/* responsive media query */
+
+@media screen and (max-width:576px) {
+    .navber,.item-links{
+        flex-direction: column;
+    }
+    
+}
